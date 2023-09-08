@@ -13,10 +13,11 @@ const Cards = (props: CardProps) => {
 
   function increment() {
     setClicks(clicks + 1);
+    console.log(clicks)
     if (clicks === 0) {
       alert("Item adicionado ao carinho");
     } else if (clicks >= 1) {
-      alert("Este item ja esta no seu carinho");
+      alert("Este item já esta no seu carinho");
     }
   }
   return (

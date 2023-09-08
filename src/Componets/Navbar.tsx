@@ -3,8 +3,8 @@ import { Button } from "@material-tailwind/react";
 const Navbar = () => {
   return (
     <header>
-      <nav className="flex p-6 items-center shadow-lg justify-between">
-        <div className="logo w-10">
+      <nav className="flex flex-col p-6 items-center shadow-lg justify-between md:flex-row gap-10">
+        <div className="logo w-16">
           <img
             src="https://static.vecteezy.com/system/resources/previews/014/033/577/non_2x/blue-fish-transparent-free-png.png"
             alt=""
