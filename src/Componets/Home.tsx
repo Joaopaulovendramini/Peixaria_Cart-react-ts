@@ -1,4 +1,5 @@
 import { Button } from "@material-tailwind/react";
+import ListCards from "./ListCards";
 
 const Navbar = () => {
   return (
@@ -13,9 +14,10 @@ const Navbar = () => {
 
         <ul className="flex gap-5  justify-center">
           <li>
-            <a href="" className="text-blue-500 hover:text-blue-700 ">
+            <a href="Componets/Navbar" className="text-blue-500 hover:text-blue-700 ">
               Home
             </a>
+            
           </li>
           <li>
             <a href="" className="text-blue-500 hover:text-blue-700 ">
@@ -33,9 +35,13 @@ const Navbar = () => {
           variant="outlined"
           className="text-blue-500 border-blue-500 hover:shadow-md"
         >
-          Login
+          Carinho
         </Button>
+
+      
+        
       </nav>
+      <ListCards/>
     </header>
   );
 };

@@ -2,10 +2,10 @@ import { Card } from "flowbite-react";
 import { useState } from "react";
 
 
-interface CardProps { //use Props no final do nome da interface
-  productName: string;
-  price: number;
-  imageUrl: string;
+interface CardProps { 
+  productName: "Nome do Produto",
+  price: 10.99,
+  imageUrl: "https://example.com/image.jpg"
 }
  
 const Cards = (props: CardProps) => {

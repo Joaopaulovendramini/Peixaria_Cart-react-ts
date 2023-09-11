@@ -1,19 +1,24 @@
-import Navbar from "./Componets/Navbar";
-import ListCards from "./Componets/ListCards";
-
-
-
-
-
+import Home from "./Componets/Home";
+import Carinho from "./Componets/Carinho";
+import { BrowserRouter,Route,Routes } from "react-router-dom";
 
 
 
 function App() {
   return (
     <>
-      <Navbar />
-      <ListCards />
-    </>
+   
+
+<BrowserRouter>
+<Routes>
+<Route path="/" element={<Home/>} />
+<Route path="/carinho" element={<Carinho/>} />
+
+</Routes>
+
+</BrowserRouter>
+</>
+    
   );
 }
 
