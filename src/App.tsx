@@ -1,23 +1,29 @@
 import Home from "./Componets/Home";
 import Carinho from "./Componets/Carinho";
-import { BrowserRouter,Route,Routes } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+    
+  },
+  {  path: "/carinho",
+  element: <Carinho/>
+}
+])
 
 
 
 function App() {
   return (
-    <>
-   
 
-<BrowserRouter>
-<Routes>
-<Route path="/" element={<Home/>} />
-<Route path="/carinho" element={<Carinho/>} />
-
-</Routes>
-
-</BrowserRouter>
-</>
+<RouterProvider router={router} />
     
   );
 }

@@ -2,13 +2,13 @@ import { Card } from "flowbite-react";
 import { useState } from "react";
 
 
-interface CardProps { 
+const cardProps = { 
   productName: "Nome do Produto",
   price: 10.99,
   imageUrl: "https://example.com/image.jpg"
 }
  
-const Cards = (props: CardProps) => {
+const Cards = (props: typeof cardProps) => {
   const [clicks, setClicks] = useState(0)
 
   function increment() {
@@ -16,13 +16,14 @@ const Cards = (props: CardProps) => {
     console.log(clicks)
     if (clicks === 0) {
       alert("Item adicionado ao carinho");
+
     } else if (clicks >= 1) {
       alert("Este item já esta no seu carinho");
     }
   }
   return (
     <Card
-      className="w-9/12 lg:w-1/4 flex flex-col flex-wrap"
+      className="w-96 lg:w-1/4 flex flex-col flex-wrap"
       imgAlt="Apple Watch Series 7 in colors pink, silver, and black"
       imgSrc={props.imageUrl}
     >

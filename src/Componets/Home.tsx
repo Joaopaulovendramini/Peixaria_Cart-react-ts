@@ -30,13 +30,14 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-
+        <a href="/carinho">
         <Button
           variant="outlined"
           className="text-blue-500 border-blue-500 hover:shadow-md"
         >
           Carinho
         </Button>
+        </a>
 
       
         
