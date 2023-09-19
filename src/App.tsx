@@ -1,5 +1,5 @@
-import Home from "./Componets/Home";
-import Carinho from "./Componets/Carinho";
+import Home from "./Componets/Estrutura-Site/Home";
+import Carinho from "./Componets/CarinhoDeCompras/Carinho";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -10,22 +10,13 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>
-    
+    element: <Home />,
   },
-  {  path: "/carinho",
-  element: <Carinho/>
-}
-])
-
-
+  { path: "/carinho", element: <Carinho /> },
+]);
 
 function App() {
-  return (
-
-<RouterProvider router={router} />
-    
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

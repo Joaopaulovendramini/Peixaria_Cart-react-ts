@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { Props as CardsProps } from "./Cards"; // as alias
+import { Props as CardsProps } from "../Card-Model/Cards"; // as alias
 
 
   export interface CartStore {   //Boa pratica maisculo interface
