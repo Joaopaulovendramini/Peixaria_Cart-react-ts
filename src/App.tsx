@@ -8,7 +8,7 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/Peixaria_Cart-react-ts",
+    path: "",
     element: <Home />,
   },
   { path: "/carinho", element: <Carinho /> },
