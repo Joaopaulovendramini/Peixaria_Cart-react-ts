@@ -3,13 +3,12 @@ import Carinho from "./Componets/CarinhoDeCompras/Carinho";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
+  
 } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Peixaria_Cart-react-ts",
     element: <Home />,
   },
   { path: "/carinho", element: <Carinho /> },
