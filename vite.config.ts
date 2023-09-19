@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 
 export default defineConfig({
-  base: "/Peixaria_Cart-react-ts",
+  base: "/",
   plugins: [react()],
 })
