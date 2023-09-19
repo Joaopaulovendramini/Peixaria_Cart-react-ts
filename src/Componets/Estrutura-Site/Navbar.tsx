@@ -14,7 +14,7 @@ const Navbar = () => {
         <ul className="flex gap-5  justify-center">
           <li>
             <a
-              href="Componets/Navbar"
+              href="/"
               className="text-blue-500 hover:text-blue-700 "
             >
               Home
